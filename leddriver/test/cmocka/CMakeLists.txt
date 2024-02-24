@@ -12,4 +12,4 @@ enable_testing()
 
 add_cmocka_test(cmocka_led_driver
                 SOURCES cmocka_led_driver.c
-                LINK_LIBRARIES cmocka led_driver)
+                LINK_LIBRARIES cmocka led_driver runtime_error_stub)

@@ -9,6 +9,7 @@ add_library(led_driver SHARED
 target_include_directories(led_driver
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
+add_subdirectory(test/mocks)
 add_subdirectory(test/cmocka)
 
 execute_process(COMMAND cmake -E create_symlink
